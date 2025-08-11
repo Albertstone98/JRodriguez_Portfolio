@@ -35,11 +35,12 @@ window.addEventListener('scroll', () => {
     }
 });
 
-downloadBtn.addEventListener('click', (e) => {
-    // Permitir que el enlace HTML funcione naturalmente
-    // El target="_blank" en el HTML se encargará de abrir en nueva pestaña
-    // No necesitamos prevenir el comportamiento por defecto
-});
+// Comentamos el event listener para que solo funcione el enlace HTML
+// downloadBtn.addEventListener('click', (e) => {
+//     // Permitir que el enlace HTML funcione naturalmente
+//     // El target="_blank" en el HTML se encargará de abrir en nueva pestaña
+//     // No necesitamos prevenir el comportamiento por defecto
+// });
 
 // Scroll suave para los enlaces del navbar
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
