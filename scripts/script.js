@@ -36,9 +36,9 @@ window.addEventListener('scroll', () => {
 });
 
 downloadBtn.addEventListener('click', (e) => {
-    e.preventDefault(); // Prevenir el comportamiento por defecto
-    // Abrir el PDF en una nueva pestaña
-    window.open('docs/CV - José Alberto Rodríguez.pdf', '_blank');
+    // Permitir que el enlace HTML funcione naturalmente
+    // El target="_blank" en el HTML se encargará de abrir en nueva pestaña
+    // No necesitamos prevenir el comportamiento por defecto
 });
 
 // Scroll suave para los enlaces del navbar
