@@ -35,9 +35,10 @@ window.addEventListener('scroll', () => {
     }
 });
 
-downloadBtn.addEventListener('click', () => {
-    // Cambiá la ruta del CV según corresponda
-    window.location.href = 'CV_Jose_Alberto_Rodriguez.pdf';
+downloadBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevenir el comportamiento por defecto
+    // Abrir el PDF en una nueva pestaña
+    window.open('docs/CV - José Alberto Rodríguez.pdf', '_blank');
 });
 
 // Scroll suave para los enlaces del navbar
